@@ -4,7 +4,8 @@ from django import forms
 class VideoForm(forms.ModelForm):
     class Meta:
         model = Video
-        fields = ['title', 'youtube_id', 'url']
+        fields = ['url']
+        labels = {'url':'YouTube Url'}
 
 
 class SearchForm(forms.Form):
